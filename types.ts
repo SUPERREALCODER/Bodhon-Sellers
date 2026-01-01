@@ -27,3 +27,18 @@ export interface Product {
 export interface CartItem extends Product {
   quantity: number;
 }
+
+export interface StatItem {
+  label: string;
+  value: string;
+  icon: string;
+}
+
+export interface PortfolioItem {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tag: string;
+  stats: string;
+}

@@ -1,9 +1,43 @@
 
-import { Product } from './types';
+import { Product, StatItem, PortfolioItem } from './types';
 
 const MOCK_REVIEWS = [
   { id: 1, user: "Ananya S.", rating: 5, comment: "Absolutely stunning. Exceeded my expectations!", date: "2 days ago" },
   { id: 2, user: "Rahul K.", rating: 4, comment: "Good quality, but delivery took a bit longer than expected.", date: "1 week ago" }
+];
+
+export const STATS: StatItem[] = [
+  { label: "Happy Customers", value: "15,000+", icon: "Users" },
+  { label: "Products Sold", value: "42,000+", icon: "ShoppingBag" },
+  { label: "Avg. Rating", value: "4.8/5", icon: "Star" },
+  { label: "Local Partners", value: "120+", icon: "Handshake" }
+];
+
+export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  {
+    id: 1,
+    title: "Corporate Gifting - Tech Hub",
+    description: "Successfully delivered 500+ customized minimalist watches for a major IT firm's annual celebration.",
+    image: "https://placehold.co/600x400?text=Corporate+Bulk+Order",
+    tag: "Bulk Fashion",
+    stats: "500 Units Sold"
+  },
+  {
+    id: 2,
+    title: "Wedding Bakery Catering",
+    description: "Provided 2,000+ assorted muffins and mini-cakes for a high-profile destination wedding in Udaipur.",
+    image: "https://placehold.co/600x400?text=Wedding+Catering",
+    tag: "Event Catering",
+    stats: "2k+ Items Sold"
+  },
+  {
+    id: 3,
+    title: "Festive Jewelry Collection",
+    description: "Sold out our entire 'Temple Jhumka' limited edition series within 48 hours during Diwali 2023.",
+    image: "https://placehold.co/600x400?text=Sold+Out+Collection",
+    tag: "Sold Out",
+    stats: "1.2k Sets Sold"
+  }
 ];
 
 export const PRODUCTS: Product[] = [
